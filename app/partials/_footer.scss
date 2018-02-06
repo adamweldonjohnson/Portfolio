@@ -1,3 +1,28 @@
 .footer {
+  padding-top: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $headerColor;
+  display: flex;
 
+  p {
+    font-weight: 300;
+    font-size: 2rem;
+    flex: 1;
+    text-align: right;
+  }
+
+  div {
+    display: flex;
+    flex: 1;
+    /* border: $test-border; */
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .btn {
+    /* flex: 1; */
+    max-height: 100%;
+  }
 }

@@ -1,0 +1,21 @@
+@import "./_fonts.scss";
+
+.btn {
+  @include border-radius(0.3rem);
+
+  text-align: center;
+  display: inline-block;
+  color: $bgColor;
+  text-decoration:none;
+  padding:5px 10px;
+  margin: 0.2rem 0rem;
+  max-height: 1.5rem;
+  font-family: $p-font-stack;
+  font-size: $p-size;
+  font-weight: $p-weight;
+  max-width: 10rem;
+}
+
+.btn-open {
+  @include button-bg ($headerColor)
+}

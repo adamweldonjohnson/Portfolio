@@ -1,3 +1,23 @@
 .header {
+  @include card(1.3);
 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+  background-color: $headerColor;
+  color: $headerTextColor;
+  font-family: $p-font-stack;
+  font-weight: $h1-weight;
+  letter-spacing: 1.3rem;
+
+  div {
+    flex: 1
+  }
+
+  div:nth-of-type(2) {
+    flex-grow: 3;
+  }
 }

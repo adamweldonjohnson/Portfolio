@@ -1,8 +1,41 @@
 @import "../partials/_reset.scss";
 @import "../partials/_variables.scss";
 @import "../partials/_mixins.scss";
+@import "../partials/_fonts.scss";
+@import "../partials/_buttons.scss";
 @import "../partials/_header.scss";
 @import "../partials/_nav.scss";
 @import "../partials/_main.scss";
 @import "../partials/_footer.scss";
 @import "../partials/_sidebar.scss";
+
+body {
+  background-color: $bgColor;
+}
+
+h1 {
+  font-family: $title-font-stack;
+  font-size: $h1-size;
+}
+
+h2 {
+  font-size: $h2-size;
+  font-family: $title-font-stack;
+  font-weight: $h2-weight;
+  /* margin: $title-margin; */
+}
+
+%p {
+  font-family: $p-font-stack;
+  font-size: $p-size;
+  font-weight: $p-weight;
+  color: $headerTextColor;
+}
+
+p {
+  @extend %p;
+}
+
+li {
+  @extend %p
+}
