@@ -3,32 +3,65 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>test</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
   <div class="header">
-    <div></div>
     <div>
-      <h1>ADAM JOHNSON</h1>
     </div>
-    <div></div>
+    <div id="right">
+      <div>
+        <h1>ADAM JOHNSON</h1>
+      </div>
+      <span id="typed"></span>
+    </div>
+  </div>
   </div>
   <div class="main">
-    <div class="about">
-      <h2>About Me</h2>
-      <p>Hi! I'm a Kansas City-based full-stack Javascript developer. I have a passion for design and love to create new content that looks great and works properly. I've got experience with a host of technologies (check them out below!). I'm currently seeking
-        a position as a developer and would love to hear about any opportunities you might have for me!</p>
+    <div class="card">
+      <div class="reveal-left" id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm a Kansas City-based full-stack Javascript developer. I have a passion for design and love to create new content that looks great and works properly. I've got experience with a host of technologies (check them out below!). I'm currently
+          seeking a position as a developer and would love to hear about any opportunities you might have for me!</p>
+      </div>
+      <div class="reveal-right" id="tech">
+        <h2>My Technologies</h2>
+        <div>
+          <ul>
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Vue.js</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Git/Github</li>
+          </ul>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Bulma</li>
+            <li>Adobe Creative Cloud</li>
+            <li>Davinci Resolve</li>
+            <li>Final Cut Pro X</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="section">
+
+    <div class="section card" id="dev">
       <div class="left">
         <div class="vertical-left">
-          <h2>DEVELOPER</h1>
-          <a class="btn btn-open">
-            open for more
-          </a>
+          <h2>WEB DEV</h1>
+          <div>
+            <a class="btn btn-open" id="devBtn">
+              open for more
+            </a>
+          </div>
             <div class="horizontal">
               <div>
                 <ul>
@@ -47,26 +80,12 @@
             </div>
         </div>
       </div>
-      <div class="right" id="devContainer">
-      </div>
-
+      <div class="right" id="devContainer"></div>
     </div>
-    <div class="projects hidden">
-      <div class="projectImg">
-        <img src="./assets/portfolio.png" alt="my portfolio page">
-      </div>
-      <div class="projectImg">
-        <img src="./assets/portfolio.png" alt="my portfolio page">
-      </div>
-      <div class="projectImg">
-        <img src="./assets/reefChem.png" alt="screenshot of a website used to help track marine aquarium chemistry">
-      </div><div class="projectImg">
-        <img src="./assets/portfolio.png" alt="my portfolio page">
-      </div><div class="projectImg">
-        <img src="./assets/portfolio.png" alt="my portfolio page">
-      </div>
+    <div class="projects hidden" id="devProjects">
+      <h1>STUFF GOES HERE! :)</h1>
     </div>
-    <div class="section">
+    <div class="section card" id="video">
       <div class="left">
         <video autoplay muted loop id="myVideo">
           <source src="./assets/turntable.mp4" type="video/mp4">
@@ -77,17 +96,17 @@
 
         <div class="vertical-right">
         <h2>VIDEO</h1>
-        <a class="btn btn-open">
+        <a class="btn btn-open" id="videoBtn">
           open for more
         </a>
-        <ul>
+        <ul id="video">
           <li>Final Cut Pro X</li>
           <li>Davinci Resolve</li>
         </ul>
         </div>
       </div>
     </div>
-    <div class="projects hidden">
+    <div class="projects hidden" id="videoProjects">
       <div class="projectImg">
         test
       </div>
@@ -102,11 +121,11 @@
         test
       </div>
     </div>
-    <div class="section">
+    <div class="section card" id="photo">
       <div class="left">
         <div class="vertical-left">
         <h2>PHOTO</h1>
-          <a class="btn btn-open">
+          <a class="btn btn-open" id="photoBtn">
             open for more
           </a>
           <ul>
@@ -123,7 +142,7 @@
 
       </div>
     </div>
-    <div class="projects hidden">
+    <div class="projects hidden" id="photoProjects">
       <div class="projectImg">
         test
       </div>
@@ -151,6 +170,12 @@
     </div>
     <div></div>
   </div>
+
+
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="typed.min.js"></script>
+  <script type="text/javascript" src="typeFile.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

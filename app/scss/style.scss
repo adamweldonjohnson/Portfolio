@@ -8,34 +8,4 @@
 @import "../partials/_main.scss";
 @import "../partials/_footer.scss";
 @import "../partials/_sidebar.scss";
-
-body {
-  background-color: $bgColor;
-}
-
-h1 {
-  font-family: $title-font-stack;
-  font-size: $h1-size;
-}
-
-h2 {
-  font-size: $h2-size;
-  font-family: $title-font-stack;
-  font-weight: $h2-weight;
-  /* margin: $title-margin; */
-}
-
-%p {
-  font-family: $p-font-stack;
-  font-size: $p-size;
-  font-weight: $p-weight;
-  color: $headerTextColor;
-}
-
-p {
-  @extend %p;
-}
-
-li {
-  @extend %p
-}
+@import "../partials/_breakpoints.scss";

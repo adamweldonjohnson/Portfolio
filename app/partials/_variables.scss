@@ -1,11 +1,13 @@
 //MAIN DIV
 $main-width: 80%;
-$main-top-margin: 6rem;
+$main-top-margin: 5rem;
 
 //MARGINS AND TEST BORDER
 $test-border: 1px solid blue;
 $title-margin: 0.3rem;
 $section-padding: 1rem 0rem;
+$card-padding: 0.5rem 1rem;
+$side-margin: 0.5rem;
 
 //COLORS
 $bgColor: #f9f1db;
@@ -16,6 +18,8 @@ $headerTextColor: #5f6666;
 $dev-url: url('https://images.pexels.com/photos/574080/pexels-photo-574080.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
 $video-url: url('https://images.pexels.com/photos/274977/pexels-photo-274977.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
 $photo-url: url('https://images.pexels.com/photos/597051/man-camera-rolleicord-watch-597051.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+$headshot-url: url('/assets/headshot.jpg');
+$splash-url: url('https://images.pexels.com/photos/331684/pexels-photo-331684.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
 
 //IMAGE HEIGHTS/WIDTHS
 $imgHeight: 250px;

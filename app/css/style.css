@@ -49,6 +49,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* @param {Number} $depth - depth level
+@return {List} */
 /* $font-stack: 'Lobster', cursive; */
 /* $font-stack: 'Rubik Mono One', sans-serif; */
 /* $font-stack: 'Allerta Stencil', sans-serif; */
@@ -56,6 +58,25 @@ table {
 /* $font-stack: 'Kite One', sans-serif; */
 /* $font-stack: 'Playfair Display', serif; */
 /* $font-stack: 'Cardo', serif;  */
+body {
+  background-color: #f9f1db; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem; }
+
+h2 {
+  font-size: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  /* margin: $title-margin; */ }
+
+p, li {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #5f6666; }
+
 /* $font-stack: 'Lobster', cursive; */
 /* $font-stack: 'Rubik Mono One', sans-serif; */
 /* $font-stack: 'Allerta Stencil', sans-serif; */
@@ -63,6 +84,25 @@ table {
 /* $font-stack: 'Kite One', sans-serif; */
 /* $font-stack: 'Playfair Display', serif; */
 /* $font-stack: 'Cardo', serif;  */
+body {
+  background-color: #f9f1db; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem; }
+
+h2 {
+  font-size: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  /* margin: $title-margin; */ }
+
+p, li {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #5f6666; }
+
 .btn {
   -webkit-border-radius: 0.3rem;
   border-radius: 0.3rem;
@@ -89,34 +129,41 @@ table {
     background: #437372; }
 
 .header {
-  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
-  position: fixed;
-  top: 0;
-  width: 100%;
+  background-image: url("https://images.pexels.com/photos/331684/pexels-photo-331684.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
   display: flex;
-  padding: 0.5rem 0 0.5rem 0;
-  text-align: center;
-  background-color: #80b5b4;
-  color: #5f6666;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  letter-spacing: 1.3rem; }
+  color: #5f6666; }
   .header div {
-    flex: 1; }
-  .header div:nth-of-type(2) {
-    flex-grow: 3; }
+    flex: 2;
+    /* border: $test-border; */ }
+  .header #right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .header #right div:first-child {
+      flex: 1;
+      padding-top: 30%;
+      color: #80b5b4; }
+    .header #right #typed {
+      flex: 8;
+      font-size: 3rem;
+      /* height: 300px; */
+      /* border: $test-border; */
+      /* padding: 0; */ }
+    .header #right .typed-cursor {
+      opacity: 0; }
 
 .nav ul {
   list-style: none; }
 
 .main {
   max-width: 80%;
-  margin: 6rem auto 6rem auto; }
-  .main .about {
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
-    max-width: 50%;
-    text-align: center; }
+  margin: 5rem auto 5rem auto; }
   .main .section {
+    /* border: $test-border; */
     padding: 1rem 0rem;
     color: #80b5b4;
     display: flex;
@@ -131,7 +178,8 @@ table {
       justify-content: flex-end;
       align-items: flex-start;
       vertical-align: middle;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
       min-width: 250px; }
     .main .section .right {
       flex: 1;
@@ -140,29 +188,86 @@ table {
       justify-content: flex-start;
       align-items: flex-start;
       background-size: cover;
-      min-width: 250px; }
+      min-width: 250px;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; }
     .main .section #devContainer {
       background-image: url("https://images.pexels.com/photos/574080/pexels-photo-574080.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-      background-position: center; }
+      background-position: center;
+      margin-right: 1rem;
+      margin-left: 1rem; }
     .main .section #myVideo {
       height: 250px;
-      min-width: 300px; }
+      min-width: 300px;
+      margin-right: 0.7rem;
+      /* margin-left: $side-margin + 0.5; */ }
     .main .section #photoContainer {
       background-image: url("https://images.pexels.com/photos/597051/man-camera-rolleicord-watch-597051.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-      background-position: center; }
+      background-position: center;
+      margin-right: 1rem;
+      margin-left: 1rem; }
     .main .section .vertical-left, .main .section .vertical-right {
       display: flex;
       flex-direction: column; }
     .main .section .vertical-left {
+      /* border: $test-border; */
       text-align: right; }
     .main .section .vertical-right {
+      /* border: $test-border; */
       text-align: left; }
     .main .section .horizontal {
+      /* border: $test-border; */
       display: flex;
       flex-direction: row; }
       .main .section .horizontal div {
+        /* border: $test-border; */
         flex: 1;
-        text-align: left; }
+        text-align: right; }
+      .main .section .horizontal div:nth-child(1) {
+        text-align: center; }
+  .main #dev {
+    background-color: #80b5b4;
+    color: #f9f1db; }
+  .main .card {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 384px; }
+    .main .card p {
+      color: #f9f1db;
+      padding-top: 1rem;
+      line-height: 2.2rem; }
+    .main .card ul {
+      padding-top: 1rem;
+      padding-bottom: 0.5rem; }
+    .main .card li {
+      color: #f9f1db;
+      line-height: 1.9rem; }
+    .main .card #about {
+      color: #f9f1db;
+      background-color: #5f6666;
+      text-align: center;
+      flex: 1;
+      border-right: 0.5rem solid #80b5b4;
+      border-bottom: 0.2rem solid #80b5b4;
+      border-left: 1rem solid #80b5b4;
+      border-top: 1rem solid #80b5b4;
+      padding: 0.5rem 1rem;
+      min-width: 384px; }
+    .main .card #tech {
+      border-top: 1rem solid #80b5b4;
+      color: #f9f1db;
+      background-color: #5f6666;
+      flex: 1;
+      text-align: center;
+      border-left: 0.5rem solid #80b5b4;
+      border-bottom: 0.2rem solid #80b5b4;
+      border-right: 1rem solid #80b5b4;
+      padding: 0.5rem 1rem; }
+      .main .card #tech div {
+        display: flex; }
+        .main .card #tech div ul {
+          flex: 1; }
   .main .projects {
     display: flex;
     max-width: 100%;
@@ -179,6 +284,41 @@ table {
       max-width: 20%; }
       .main .projects div img {
         max-width: 100%; }
+  .main #photo {
+    background-color: #5f6666; }
+  .main #video li {
+    color: #5f6666; }
+  .main #devBtn {
+    background: #5f6666; }
+    .main #devBtn:hover {
+      background: #494e4e;
+      transition: all 0.3s ease; }
+    .main #devBtn:active {
+      background: #222424; }
+  .main .hidden {
+    display: none; }
+  .main .reveal {
+    display: block;
+    -webkit-animation: slide-down .5s;
+    -moz-animation: slide-down .5s; }
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%); }
+  50% {
+    opacity: 0.4; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes slide-down {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
 
 .footer {
   padding-top: 0.5rem;
@@ -202,21 +342,6 @@ table {
     /* flex: 1; */
     max-height: 100%; }
 
-body {
-  background-color: #f9f1db; }
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 4rem; }
-
-h2 {
-  font-size: 2.8rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  /* margin: $title-margin; */ }
-
-p, li {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 100;
-  color: #5f6666; }
+@media only screen and (min-width: 200px) {
+  .header {
+    width: 100% ""; } }
