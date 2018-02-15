@@ -160,6 +160,8 @@ p, li {
   list-style: none; }
 
 .main {
+  display: flex;
+  flex-direction: column;
   max-width: 80%;
   margin: 5rem auto 5rem auto; }
   .main .section {
@@ -269,21 +271,40 @@ p, li {
         .main .card #tech div ul {
           flex: 1; }
   .main .projects {
+    padding: 2rem 0rem;
+    /* background: red; */
     display: flex;
-    max-width: 100%;
+    margin: auto;
+    max-width: 80%;
     /* height: 150px; */
     /* margin: 0 0 0 50%; */
     /* margin: 0 10%; */
     flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    border: 1px solid blue; }
-    .main .projects div {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .main .projects .box {
       flex: 1;
-      border: 1px solid blue;
-      max-width: 20%; }
-      .main .projects div img {
-        max-width: 100%; }
+      display: flex;
+      flex-direction: column;
+      min-width: 20rem;
+      min-height: 20rem;
+      margin: 0.5rem 1rem;
+      border: 0.2rem solid #80b5b4; }
+      .main .projects .box .top {
+        flex: 3;
+        border-bottom: 0.1rem solid #80b5b4; }
+      .main .projects .box .bottom {
+        flex: 2;
+        text-align: center; }
+      .main .projects .box #devImg1 {
+        background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover; }
+      .main .projects .box #devImg2 {
+        background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover; }
+      .main .projects .box #devImg3 {
+        background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover; }
   .main #photo {
     background-color: #5f6666; }
   .main #video li {
@@ -298,27 +319,27 @@ p, li {
   .main .hidden {
     display: none; }
   .main .reveal {
-    display: block;
-    -webkit-animation: slide-down .5s;
-    -moz-animation: slide-down .5s; }
+    display: flex;
+    -webkit-animation: slide-from-left .5s;
+    -moz-animation: slide-from-left .5s; }
 
-@-webkit-keyframes slide-down {
+@-webkit-keyframes slide-from-left {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-100%); }
+    -webkit-transform: translateX(-100%); }
   50% {
     opacity: 0.4; }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0); } }
+    -webkit-transform: translateX(0); } }
 
-@-moz-keyframes slide-down {
+@-moz-keyframes slide-from-left {
   0% {
     opacity: 0;
-    -moz-transform: translateY(-100%); }
+    -moz-transform: translateX(-100%); }
   100% {
     opacity: 1;
-    -moz-transform: translateY(0); } }
+    -moz-transform: translateX(0); } }
 
 .footer {
   padding-top: 0.5rem;
