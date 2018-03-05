@@ -2,14 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
 
 //FONTS
-/* $font-stack: 'Lobster', cursive; */
-/* $font-stack: 'Rubik Mono One', sans-serif; */
-/* $font-stack: 'Allerta Stencil', sans-serif; */
-/* $font-stack: 'Rye', cursive; */
-/* $font-stack: 'Kite One', sans-serif; */
 $title-font-stack: 'Montserrat', sans-serif;
-/* $font-stack: 'Playfair Display', serif; */
-/* $font-stack: 'Cardo', serif;  */
 $p-font-stack: 'Raleway', sans-serif;
 
 
@@ -21,9 +14,12 @@ $h1-size: 4rem;
 $h1-weight: 800;
 $h2-size: 2.8rem;
 $h2-weight: 600;
+$h3-size: 2.2rem;
+$h3-weight: 400;
 $p-size: 1.4rem;
 $p-weight: 100;
 $p-em-weight: 300;
+$p-line-height: 1.5rem;
 
 
 
@@ -40,7 +36,12 @@ h2 {
   font-size: $h2-size;
   font-family: $title-font-stack;
   font-weight: $h2-weight;
-  /* margin: $title-margin; */
+}
+
+h3 {
+  font-size: $h3-size;
+  font-family: $title-font-stack;
+  font-weight: $h3-weight;
 }
 
 %p {
@@ -48,6 +49,7 @@ h2 {
   font-size: $p-size;
   font-weight: $p-weight;
   color: $headerTextColor;
+  line-height: $p-line-height;
 }
 
 p {

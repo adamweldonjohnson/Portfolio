@@ -51,13 +51,6 @@ table {
 
 /* @param {Number} $depth - depth level
 @return {List} */
-/* $font-stack: 'Lobster', cursive; */
-/* $font-stack: 'Rubik Mono One', sans-serif; */
-/* $font-stack: 'Allerta Stencil', sans-serif; */
-/* $font-stack: 'Rye', cursive; */
-/* $font-stack: 'Kite One', sans-serif; */
-/* $font-stack: 'Playfair Display', serif; */
-/* $font-stack: 'Cardo', serif;  */
 body {
   background-color: #f9f1db; }
 
@@ -68,22 +61,20 @@ h1 {
 h2 {
   font-size: 2.8rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  /* margin: $title-margin; */ }
+  font-weight: 600; }
+
+h3 {
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400; }
 
 p, li {
   font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   font-weight: 100;
-  color: #5f6666; }
+  color: #5f6666;
+  line-height: 1.5rem; }
 
-/* $font-stack: 'Lobster', cursive; */
-/* $font-stack: 'Rubik Mono One', sans-serif; */
-/* $font-stack: 'Allerta Stencil', sans-serif; */
-/* $font-stack: 'Rye', cursive; */
-/* $font-stack: 'Kite One', sans-serif; */
-/* $font-stack: 'Playfair Display', serif; */
-/* $font-stack: 'Cardo', serif;  */
 body {
   background-color: #f9f1db; }
 
@@ -94,14 +85,19 @@ h1 {
 h2 {
   font-size: 2.8rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  /* margin: $title-margin; */ }
+  font-weight: 600; }
+
+h3 {
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400; }
 
 p, li {
   font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   font-weight: 100;
-  color: #5f6666; }
+  color: #5f6666;
+  line-height: 1.5rem; }
 
 .btn {
   -webkit-border-radius: 0.3rem;
@@ -129,15 +125,14 @@ p, li {
     background: #437372; }
 
 .header {
-  background-image: url("https://images.pexels.com/photos/331684/pexels-photo-331684.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-image: url("../assets/macbookDark-min.jpg");
   background-size: cover;
   background-position: right;
-  height: 100vh;
+  height: 94vh;
   display: flex;
   color: #5f6666; }
   .header div {
-    flex: 2;
-    /* border: $test-border; */ }
+    flex: 2; }
   .header #right {
     flex: 1;
     display: flex;
@@ -145,14 +140,12 @@ p, li {
     align-items: flex-start; }
     .header #right div:first-child {
       flex: 1;
-      padding-top: 30%;
-      color: #80b5b4; }
+      padding-top: 30%; }
     .header #right #typed {
-      flex: 8;
-      font-size: 3rem;
-      /* height: 300px; */
-      /* border: $test-border; */
-      /* padding: 0; */ }
+      flex: 6;
+      font-size: 2.3rem;
+      max-width: 100%;
+      font-family: "Montserrat", sans-serif; }
     .header #right .typed-cursor {
       opacity: 0; }
 
@@ -162,55 +155,50 @@ p, li {
 .main {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   max-width: 80%;
   margin: 5rem auto 5rem auto; }
   .main .section {
+    flex: 1;
     /* border: $test-border; */
     padding: 1rem 0rem;
     color: #80b5b4;
     display: flex;
-    flex-wrap: wrap; }
-    .main .section ul {
-      padding: 0.5rem 0; }
-      .main .section ul li {
-        padding: 0.25rem 0; }
+    flex-wrap: wrap;
+    min-height: 100%; }
     .main .section .left {
       flex: 1;
       display: flex;
+      flex-wrap: wrap;
+      /* min-width: 40%; */
       justify-content: flex-end;
       align-items: flex-start;
       vertical-align: middle;
       margin-right: 0.5rem;
-      margin-left: 0.5rem;
-      min-width: 250px; }
+      margin-left: 0.5rem; }
     .main .section .right {
       flex: 1;
       display: flex;
-      height: 250px;
+      flex-wrap: wrap;
+      min-width: 40%;
       justify-content: flex-start;
       align-items: flex-start;
       background-size: cover;
-      min-width: 250px;
       margin-right: 0.5rem;
       margin-left: 0.5rem; }
     .main .section #devContainer {
-      background-image: url("https://images.pexels.com/photos/574080/pexels-photo-574080.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-      background-position: center;
+      flex: 1;
+      flex-wrap: wrap;
+      min-width: 40%;
+      min-height: 250px;
       margin-right: 1rem;
-      margin-left: 1rem; }
-    .main .section #myVideo {
-      height: 250px;
-      min-width: 300px;
-      margin-right: 0.7rem;
-      /* margin-left: $side-margin + 0.5; */ }
-    .main .section #photoContainer {
-      background-image: url("https://images.pexels.com/photos/597051/man-camera-rolleicord-watch-597051.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-      background-position: center;
-      margin-right: 1rem;
-      margin-left: 1rem; }
+      margin-left: 1rem;
+      background-image: url("../assets/hardDrive1080-min.jpg");
+      background-position: center; }
     .main .section .vertical-left, .main .section .vertical-right {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      /* flex: 1; */ }
     .main .section .vertical-left {
       /* border: $test-border; */
       text-align: right; }
@@ -223,18 +211,19 @@ p, li {
       flex-direction: row; }
       .main .section .horizontal div {
         /* border: $test-border; */
-        flex: 1;
+        /* flex: 1; */
         text-align: right; }
       .main .section .horizontal div:nth-child(1) {
         text-align: center; }
   .main #dev {
+    flex: 1;
     background-color: #80b5b4;
     color: #f9f1db; }
   .main .card {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23);
     display: flex;
     flex-wrap: wrap;
-    min-width: 384px; }
+    min-width: 100%; }
     .main .card p {
       color: #f9f1db;
       padding-top: 1rem;
@@ -246,26 +235,29 @@ p, li {
       color: #f9f1db;
       line-height: 1.9rem; }
     .main .card #about {
+      flex: 1;
       color: #f9f1db;
       background-color: #5f6666;
       text-align: center;
-      flex: 1;
-      border-right: 0.5rem solid #80b5b4;
-      border-bottom: 0.2rem solid #80b5b4;
-      border-left: 1rem solid #80b5b4;
-      border-top: 1rem solid #80b5b4;
+      border: solid #80b5b4;
+      border-width: 1rem 0.5rem 0.2rem 1rem;
+      /* border: 1rem 0.5rem 0.2rem 1rem solid $headerColor; */
+      /* border-bottom: 0.2rem solid $headerColor; */
+      /* border-left: 1rem solid $headerColor; */
+      /* border-top: 1rem solid $headerColor; */
       padding: 0.5rem 1rem;
-      min-width: 384px; }
+      /* max-width: 50%; */ }
     .main .card #tech {
-      border-top: 1rem solid #80b5b4;
-      color: #f9f1db;
-      background-color: #5f6666;
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0.5rem 1rem;
+      border: solid #80b5b4;
+      border-width: 1rem 1rem 0.2rem 0.5rem;
       text-align: center;
-      border-left: 0.5rem solid #80b5b4;
-      border-bottom: 0.2rem solid #80b5b4;
-      border-right: 1rem solid #80b5b4;
-      padding: 0.5rem 1rem; }
+      color: #f9f1db;
+      background-color: #5f6666; }
       .main .card #tech div {
         display: flex; }
         .main .card #tech div ul {
@@ -289,26 +281,58 @@ p, li {
       min-width: 20rem;
       min-height: 20rem;
       margin: 0.5rem 1rem;
-      border: 0.2rem solid #80b5b4; }
+      /* border: 0.5rem solid $headerColor; */ }
+      .main .projects .box a {
+        cursor: pointer; }
       .main .projects .box .top {
         flex: 3;
-        border-bottom: 0.1rem solid #80b5b4; }
+        /* border-bottom: 0.25rem solid $headerColor; */ }
+        .main .projects .box .top img {
+          max-width: 100%; }
       .main .projects .box .bottom {
-        flex: 2;
-        text-align: center; }
-      .main .projects .box #devImg1 {
-        background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-        background-size: cover; }
-      .main .projects .box #devImg2 {
-        background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-        background-size: cover; }
-      .main .projects .box #devImg3 {
-        background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-        background-size: cover; }
+        flex: 6;
+        text-align: center;
+        background: #5f6666;
+        padding: 0.5rem; }
+        .main .projects .box .bottom h3 {
+          padding: 0.5rem;
+          color: #f9f1db; }
+        .main .projects .box .bottom p {
+          color: #80b5b4;
+          padding: 0.5rem;
+          line-height: 1.5rem; }
+  .main #video {
+    display: flex;
+    flex-wrap: wrap-reverse; }
+    .main #video .right {
+      flex: 1;
+      min-width: 40%; }
+    .main #video .left img {
+      flex: 1;
+      height: 250px;
+      max-width: 100%;
+      min-width: 180px;
+      min-height: 300px;
+      margin: 0rem 0.5rem; }
+    .main #video li {
+      color: #5f6666;
+      padding: 0.5rem; }
   .main #photo {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #5f6666; }
-  .main #video li {
-    color: #5f6666; }
+    .main #photo .left {
+      flex: 1;
+      min-width: 40%; }
+    .main #photo .right {
+      flex: 1;
+      min-width: 180px;
+      /* max-width: 100%; */
+      height: 250px;
+      background-image: url("https://images.pexels.com/photos/597051/man-camera-rolleicord-watch-597051.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+      background-position: center;
+      margin-right: 1rem;
+      margin-left: 1rem; }
   .main #devBtn {
     background: #5f6666; }
     .main #devBtn:hover {
@@ -340,6 +364,30 @@ p, li {
   100% {
     opacity: 1;
     -moz-transform: translateX(0); } }
+  .main .reveal-bottom {
+    display: flex;
+    -webkit-animation: slide-from-bottom .5s;
+    -moz-animation: slide-from-bottom .5s; }
+
+@-webkit-keyframes slide-from-bottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%); }
+  50% {
+    opacity: 0.4; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes slide-from-bottom {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(100%); }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+  .main .rowTallPhotos {
+    padding-bottom: 3rem; }
 
 .footer {
   padding-top: 0.5rem;
@@ -365,4 +413,28 @@ p, li {
 
 @media only screen and (min-width: 200px) {
   .header {
-    width: 100% ""; } }
+    background-position: 10% 0%; }
+    .header #typed {
+      color: #577878;
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6); }
+    .header #logo {
+      max-width: 90%; }
+  .footer .removeOnMobile {
+    display: none; } }
+
+@media only screen and (min-width: 480px) {
+  .header {
+    background-position: 50% 0%; }
+    .header #typed {
+      text-shadow: none; }
+    .header #logo {
+      max-width: 100%; }
+  .footer .removeOnMobile {
+    display: flex;
+    margin: 0rem 0.5rem; }
+  .footer .displayOnMobile {
+    display: none; } }
+
+@media only screen and (min-width: 888px) {
+  .header {
+    background-position: 0% 0%; } }

@@ -1,13 +1,53 @@
 @media only screen and (min-width:200px) {
   .header {
-    width: 100%''
+    background-position: 10% 0%;
+
+    #typed {
+      color: desaturate(darken($headerColor, 20), 10);
+      text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+    }
+
+    #logo {
+      max-width: 90%;
+    }
+  }
+
+  .footer {
+    .removeOnMobile {
+      display: none;
+    }
   }
 }
 @media only screen and (min-width:480px) {
+  .header {
+    background-position: 50% 0%;
+
+    #typed {
+      text-shadow: none;
+    }
+
+    #logo {
+      max-width: 100%;
+    }
+  }
+
+  .footer {
+    .removeOnMobile {
+      display: flex;
+      margin: 0rem 0.5rem;
+    }
+    .displayOnMobile {
+      display: none;
+    }
+  }
 }
 @media only screen and (min-width:768px) {
+
 }
 @media only screen and (min-width:888px) {
+  .header {
+    background-position: 0% 0%;
+  }
 }
 @media only screen and (min-width:1024px) {
 }

@@ -2,17 +2,17 @@
 window.sr = ScrollReveal();
 sr.reveal('.reveal-left', {
   duration: 750,
-  delay: 250,
+  delay: 150,
   origin: 'left'
 });
 sr.reveal('.reveal-right', {
   duration: 500,
-  delay: 400,
+  delay: 350,
   origin: 'right'
 });
 sr.reveal('.card', {
   duration: 1000,
-  delay: 400,
+  delay: 150,
   origin: 'bottom'
 });
 
@@ -33,14 +33,10 @@ function works() {
   console.log('works');
 }
 
-function reveal() {
-
-}
-
 //CALLING TEST FUNCTION ON CLICK
-devBtn.addEventListener('click', works);
-videoBtn.addEventListener('click', works);
-photoBtn.addEventListener('click', works);
+
+// videoBtn.addEventListener('click', works);
+// photoBtn.addEventListener('click', works);
 
 //TOGGLING HIDDEN CLASS
 devBtn.addEventListener('click', function() {
@@ -48,10 +44,10 @@ devBtn.addEventListener('click', function() {
   devProjects.classList.toggle('reveal');
 });
 
-videoBtn.addEventListener('click', function() {
-  videoProjects.classList.toggle('reveal');
+photoBtn.addEventListener('click', function() {
+  photoProjects.classList.toggle('reveal-bottom');
 });
 
-videoBtn.addEventListener('click', function() {
-  videoProjects.classList.toggle('reveal');
-});
+// videoBtn.addEventListener('click', function() {
+//   videoProjects.classList.toggle('reveal');
+// });

@@ -2,13 +2,12 @@
   background-image: $splash-url;
   background-size: cover;
   background-position: right;
-  height: 100vh;
+  height: 94vh;
   display: flex;
   color: $headerTextColor;
 
   div {
     flex: 2;
-    /* border: $test-border; */
   }
 
   #right {
@@ -20,15 +19,13 @@
     div:first-child {
       flex: 1;
       padding-top: 30%;
-      color: $headerColor;
     }
 
     #typed {
-      flex: 8;
-      font-size: 3rem;
-      /* height: 300px; */
-      /* border: $test-border; */
-      /* padding: 0; */
+      flex: 6;
+      font-size: 2.3rem;
+      max-width: 100%;
+      font-family: $title-font-stack;
     }
 
     .typed-cursor {

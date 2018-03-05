@@ -4,32 +4,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test</title>
+  <title>Adam Johnson, Web Developer</title>
   <link rel="stylesheet" href="./css/style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
+
   <div class="header">
     <div>
     </div>
     <div id="right">
-      <div>
-        <h1>ADAM JOHNSON</h1>
-      </div>
+      <img src="./assets/aj2.svg" alt="a logo containing the letters A and J" id="logo">
+      <h1>ADAM JOHNSON</h1>
+      <!-- Typed.js Start -->
       <span id="typed"></span>
+      <!-- Typed.js End -->
     </div>
   </div>
   </div>
+
   <div class="main">
     <div class="card">
       <div class="reveal-left" id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm a Kansas City-based full-stack Javascript developer. I have a passion for design and love to create new content that looks great and works properly. I've got experience with a host of technologies (check them out below!). I'm currently
-          seeking a position as a developer and would love to hear about any opportunities you might have for me!</p>
+        <p>Hi! I'm a Kansas City-based full stack Javascript developer. I have a passion for design and love to create great new content. I have experience with server- and client-side web technologies. I'm currently seeking a full-time position as a developer
+          in KC or remotely. Feel free to download a PDF copy of my resume below and pass it along!</p>
       </div>
       <div class="reveal-right" id="tech">
-        <h2>My Technologies</h2>
+        <h2>My Tech</h2>
         <div>
           <ul>
             <li>Javascript</li>
@@ -83,49 +86,68 @@
       <div class="right" id="devContainer"></div>
     </div>
     <div class="projects hidden" id="devProjects">
+
         <div class="box">
-          <div class="top" id="devImg1">
-            top
-          </div>
+            <div class="top">
+              <a href="http://www.cuttinghouse.adamjohnson.io" target="_blank">
+                <img src="./assets/screenshots/cuttingHouse.png" alt="a picture of Cutting House restaurant's website">
+              </a>
+            </div>
           <div class="bottom">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
+            <h3>Cutting House</h3>
+          <p>A restaurant website for an imaginary company.</p>
+          <p>Built with Bulma.CSS with some javascript for modal and touch functionality.</p>
+          <p>Click on the image to see it live!</p>
         </div>
-        <div class="box">
-          <div class="top" id="devImg2">
-            top
-          </div>
-          <div class="bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
+      </div>
+
+      <div class="box">
+        <div class="top">
+          <a href="https://github.com/adamweldonjohnson/Reef-Chem/tree/development" target="_blank">
+            <img src="./assets/screenshots/reefChem.png" alt="a picture of the Reef Chem web application for tracking chemistry paramaters of marine aquaria">
+          </a>
         </div>
-        <div class="box">
-          <div class="top" id="devImg3">
-            top
-          </div>
-          <div class="bottom">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-        </div>
+        <div class="bottom">
+          <h3>ReefChem</h3>
+          <p>*Under Construction*<br><br>
+        MEVN Stack app for tracking chemistry of marine aquaria.</p>
+        <p>Click on the image to see my development branch!</p>
+      </div>
     </div>
+
+      <div class="box">
+          <div class="top">
+            <a  href="http://www.librarian.adamjohnson.io" target="_blank">
+              <img src="./assets/screenshots/librarian.png" alt="a screen shot of the Librarian.CSS homepage">
+            </a>
+          </div>
+        <div class="bottom">
+          <h3>Librarian.CSS</h3>
+        <p>A super light-weight CSS library for easy formatting of article-based content.</p>
+        <p>Built with pure CSS. Repository include html readme/demo file.</p>
+        <p>Click on the image to see it live!</p>
+      </div>
+    </div>
+
+    </div>
+
     <div class="section card" id="video">
       <div class="left">
-        <video autoplay muted loop id="myVideo">
-          <source src="./assets/turntable.mp4" type="video/mp4">
-        </video>
+        <img src="./assets/turntable.gif" alt="a black and white video of a turntable playing a record">
       </div>
 
       <div class="right">
-
         <div class="vertical-right">
-        <h2>VIDEO</h1>
-        <a class="btn btn-open" id="videoBtn">
-          open for more
+          <h2>VIDEO</h2>
+          <a class="btn btn-open" id="videoBtn">
+          coming soon!
         </a>
-        <ul id="video">
-          <li>Final Cut Pro X</li>
-          <li>Davinci Resolve</li>
-        </ul>
+          <ul id="video">
+            <li>Final Cut Pro X 10.4</li>
+            <li>Davinci Resolve 14</li>
+            <li>Apple Compressor 4.4</li>
+            <li> Cinema 4K + UHD, 10-bit 4:2:2, LOG, and HLG Workflows</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -138,23 +160,25 @@
       </div>
       <div class="projectImg">
         test
-      </div><div class="projectImg">
+      </div>
+      <div class="projectImg">
         test
-      </div><div class="projectImg">
+      </div>
+      <div class="projectImg">
         test
       </div>
     </div>
     <div class="section card" id="photo">
       <div class="left">
         <div class="vertical-left">
-        <h2>PHOTO</h1>
+          <h2>PHOTO</h1>
           <a class="btn btn-open" id="photoBtn">
             open for more
           </a>
           <ul>
-            <li>Photoshop</li>
-            <li>Lightroom</li>
-            <li>Illustrator</li>
+            <li>Photoshop CC</li>
+            <li>Lightroom CC</li>
+            <li>Illustrator CC</li>
           </ul>
         </div>
 
@@ -165,37 +189,114 @@
 
       </div>
     </div>
-    <div class="projects hidden" id="photoProjects">
-      <div class="projectImg">
-        test
-      </div>
-      <div class="projectImg">
-        test
-      </div>
-      <div class="projectImg">
-        test
-      </div><div class="projectImg">
-        test
-      </div><div class="projectImg">
-        test
+
+  <div class="projects hidden" id="photoProjects">
+
+    <div class="box">
+      <div class="top" id="devImg2">
+        <a href="http://www.adamjohnson.io/assets/church-min.jpg" target="_blank">
+          <img src="./assets/church-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+        </a>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <div></div>
-    <div>
-    <p>Contact</p>
+    <div class="box">
+      <div class="top" id="devImg2">
+        <a href="http://www.adamjohnson.io/assets/littleGirl-min.jpg" target="_blank">
+          <img src="./assets/littleGirl-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+        </a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="top" id="devImg2">
+        <a href="http://www.adamjohnson.io/assets/modelGuy-min.jpg" target="_blank">
+          <img src="./assets/modelGuy-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+        </a>
+      </div>
     </div>
 
-    <div>
+      <div class="box rowTallPhotos">
+        <div class="top" id="devImg2">
+          <a href="http://www.adamjohnson.io/assets/coxRobin-min.jpg" target="_blank">
+            <img src="./assets/coxRobin-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+          </a>
+        </div>
+      </div>
+      <div class="box rowTallPhotos">
+        <div class="top" id="devImg2">
+          <a href="http://www.adamjohnson.io/assets/morganAndy-min.jpg" target="_blank">
+            <img src="./assets/morganAndy-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+          </a>
+        </div>
+      </div>
+      <div class="box rowTallPhotos">
+        <div class="top" id="devImg2">
+          <a href="http://www.adamjohnson.io/assets/shannonMatt2-min.jpg" target="_blank">
+            <img src="./assets/shannonMatt2-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+          </a>
+        </div>
+      </div>
+
+    <div class="box">
+      <div class="top" id="devImg2">
+        <a href="http://www.adamjohnson.io/assets/shannonMatt-min.jpg" target="_blank">
+          <img src="./assets/shannonMatt-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+        </a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="top" id="devImg2">
+        <a href="http://www.adamjohnson.io/assets/oldGuy-min.jpg" target="_blank">
+          <img src="./assets/oldGuy-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+        </a>
+      </div>
+    </div>
+    <div class="box">
+        <div class="top" id="devImg2">
+          <a href="http://www.adamjohnson.io/assets/firetwirler-min.jpg" target="_blank">
+            <img src="./assets/firetwirler-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+          </a>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="top" id="devImg2">
+        <a href="http://www.adamjohnson.io/assets/skyline-min.jpg" target="_blank">
+          <img src="./assets/skyline-min.jpg" alt="a screen shot of the Librarian.CSS homepage">
+        </a>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div></div>
+    <div></div>
+    <div class="removeOnMobile">
+      <p>Contact</p>
+    </div>
+    <div class="removeOnMobile">
       <a href="https://github.com/adamweldonjohnson" class="btn btn-open"><i class="fab fa-github fa-2x"></i></a>
       <a href="https://www.linkedin.com/in/adamwjohnson/" class="btn btn-open"><i class="fab fa-linkedin fa-2x"></i></a>
     </div>
+    <div class="displayOnMobile">
+      <a href="https://github.com/adamweldonjohnson" class="btn btn-open"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/adamwjohnson/" class="btn btn-open"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="./assets/Adam_Johnson_Resume.pdf" download="AdamJohnsonResume" class="btn btn-open"><i class="far fa-file-pdf fa-2x"></i></a>
+    </div>
+    <div class="removeOnMobile">
+      <p>Resume Download</p>
+    </div>
+    <div class="removeOnMobile">
+      <a href="./assets/Adam_Johnson_Resume.pdf" download="AdamJohnsonResume" class="btn btn-open"><i class="far fa-file-pdf fa-2x"></i></a>
+    </div>
+    <div></div>
     <div></div>
   </div>
 
 
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <!-- Typed.js, typeFile.js, and script.js must come in this order as the last elements before the closing body tag. -->
   <script src="typed.min.js"></script>
   <script type="text/javascript" src="typeFile.js"></script>
   <script type="text/javascript" src="script.js"></script>
